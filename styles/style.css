@@ -1,8 +1,8 @@
- feature/membership-page
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
 
 /* =========================================
    READERS' HAVEN - MEMBERSHIP PAGE
-   Member 2: Membership Page Implementation
 ========================================= */
 
 .membership-page {
@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 
-/* Navigation */
+/* Membership Navigation */
 
 .membership-header {
     background: #101d35;
@@ -62,7 +62,7 @@
     color: #f3b84b;
 }
 
-/* Hero Section */
+/* Membership Hero */
 
 .membership-hero {
     padding: 85px 20px 75px;
@@ -97,7 +97,7 @@
     line-height: 1.8;
 }
 
-/* Plans Section */
+/* Membership Plans */
 
 .membership-section {
     max-width: 1200px;
@@ -121,8 +121,6 @@
     font-size: 16px;
 }
 
-/* Membership Cards */
-
 .membership-cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -137,8 +135,7 @@
     border: 1px solid #e5eaf2;
     border-radius: 18px;
     box-shadow: 0 10px 35px rgba(23, 35, 60, 0.07);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
 
@@ -204,8 +201,6 @@
     border-bottom: 1px solid #edf0f5;
 }
 
-/* Popular Plan */
-
 .membership-popular {
     border: 2px solid #e9ae3d;
     transform: translateY(-10px);
@@ -227,8 +222,6 @@
     font-weight: 800;
 }
 
-/* Membership Buttons */
-
 .membership-btn {
     display: block;
     text-align: center;
@@ -239,8 +232,7 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    transition: background 0.3s ease,
-                transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .membership-btn:hover {
@@ -248,8 +240,6 @@
     color: #17233c;
     transform: scale(1.02);
 }
-
-/* Guidelines */
 
 .membership-note {
     max-width: 1000px;
@@ -271,8 +261,6 @@
     margin-bottom: 0;
 }
 
-/* Footer */
-
 .membership-footer {
     background: #101d35;
     color: #d7e0ee;
@@ -281,7 +269,7 @@
     font-size: 14px;
 }
 
-/* Responsive Design - Tablet */
+/* Membership Responsive */
 
 @media (max-width: 900px) {
     .membership-cards {
@@ -300,8 +288,6 @@
         flex-direction: column;
     }
 }
-
-/* Responsive Design - Mobile */
 
 @media (max-width: 600px) {
     .membership-header {
@@ -341,214 +327,199 @@
         margin: 0 18px 50px;
         padding: 25px;
     }
+}
 
- feature/collections-page
- feature/collections-page
-/* General Styling */
+/* =========================================
+   COLLECTIONS PAGE
+========================================= */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f6fa;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
 }
 
-/* Header */
 header {
-  background-color: #172554;
-  color: white;
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .logo span {
-  color: #fbbf24;
+    color: #fbbf24;
 }
 
 nav {
-  display: flex;
-  gap: 25px;
+    display: flex;
+    gap: 25px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-  color: #fbbf24;
+    color: #fbbf24;
 }
 
-/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1e3a8a, #312e81);
-  color: white;
-  text-align: center;
-  padding: 65px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #312e81);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
 }
 
 .hero h1 {
-  font-size: 38px;
-  margin-bottom: 15px;
+    font-size: 38px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 17px;
-  color: #dbeafe;
+    font-size: 17px;
+    color: #dbeafe;
 }
 
-/* Main Container */
 .container {
-  width: 85%;
-  max-width: 1200px;
-  margin: 40px auto;
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
-/* Category Section */
 .category {
-  margin-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .category h2 {
-  font-size: 27px;
-  color: #172554;
-  border-left: 5px solid #f59e0b;
-  padding-left: 12px;
-  margin-bottom: 10px;
+    font-size: 27px;
+    color: #172554;
+    border-left: 5px solid #f59e0b;
+    padding-left: 12px;
+    margin-bottom: 10px;
 }
 
 .category-desc {
-  color: #666;
-  margin-bottom: 22px;
-  font-size: 15px;
+    color: #666;
+    margin-bottom: 22px;
+    font-size: 15px;
 }
 
-/* Book Grid */
 .book-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-/* Book Cards */
 .book-card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
 }
 
 .book-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .book-card img {
-  width: 150px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 15px;
+    width: 150px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
 }
 
 .book-card h3 {
-  font-size: 19px;
-  color: #172554;
-  margin-bottom: 8px;
+    font-size: 19px;
+    color: #172554;
+    margin-bottom: 8px;
 }
 
 .book-card p {
-  color: #777;
-  margin-bottom: 12px;
-  font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
 .book-card span {
-  display: inline-block;
-  background-color: #dbeafe;
-  color: #1e40af;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-/* Footer */
 footer {
-  background-color: #172554;
-  color: white;
-  text-align: center;
-  padding: 22px;
-  margin-top: 40px;
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 18px;
-  }
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 
-  .hero h1 {
-    font-size: 29px;
-  }
+    .hero h1 {
+        font-size: 29px;
+    }
 
-  .container {
-    width: 90%;
-  }
+    .container {
+        width: 90%;
+    }
 
-  .book-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
-  .book-grid {
-    grid-template-columns: 1fr;
-  }
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .hero h1 {
-    font-size: 25px;
-  }
+    .hero h1 {
+        font-size: 25px;
+    }
 
-  .book-card img {
-    width: 160px;
-  }
-
- feature/home-page
-/* ==========================================
-   READERS HAVEN LIBRARY
-   Modern Professional Website Design
-========================================== */
-
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
-
+    .book-card img {
+        width: 160px;
+    }
+}
 
 /* ==========================================
-   1. ROOT VARIABLES
+   HOME PAGE
 ========================================== */
 
 :root {
@@ -556,26 +527,17 @@ footer {
     --primary-light: #203e52;
     --secondary: #16877f;
     --secondary-dark: #116b65;
-
     --background: #ffffff;
     --background-light: #f5f8f7;
-
     --text: #354550;
     --muted: #71808a;
-
     --border: #e5eae8;
-
     --white: #ffffff;
-
     --shadow: 0 12px 35px rgba(20, 44, 62, 0.08);
-
     --transition: all 0.3s ease;
 }
 
-
-/* ==========================================
-   2. GLOBAL STYLING
-========================================== */
+/* Global Styling */
 
 * {
     margin: 0;
@@ -614,16 +576,12 @@ textarea {
     font-family: inherit;
 }
 
-
-/* ==========================================
-   3. NAVIGATION BAR
-========================================== */
+/* Navigation Bar */
 
 .site-header {
     width: 100%;
     background: var(--white);
     border-bottom: 1px solid var(--border);
-
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -633,11 +591,9 @@ textarea {
     max-width: 1200px;
     margin: auto;
     padding: 19px 30px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 25px;
 }
 
@@ -646,7 +602,6 @@ textarea {
     font-size: 27px;
     font-weight: 800;
     color: var(--primary);
-
     white-space: nowrap;
 }
 
@@ -662,11 +617,9 @@ textarea {
 
 .nav-links a {
     position: relative;
-
     color: var(--text);
     font-size: 14px;
     font-weight: 600;
-
     transition: var(--transition);
 }
 
@@ -677,30 +630,21 @@ textarea {
 
 .nav-links a.active::after {
     content: "";
-
     position: absolute;
     left: 0;
     bottom: -8px;
-
     width: 100%;
     height: 2px;
-
     background: var(--secondary);
 }
 
-
-/* ==========================================
-   4. HERO SECTION
-========================================== */
+/* Home Hero */
 
 .hero {
     min-height: 610px;
-
     display: flex;
     align-items: center;
-
     padding: 100px 30px;
-
     background:
         linear-gradient(
             90deg,
@@ -716,80 +660,54 @@ textarea {
     max-width: 1200px;
     width: 100%;
     margin: auto;
-
     color: var(--white);
 }
 
 .hero-subtitle {
     color: #8ed8cb;
-
     font-size: 13px;
     font-weight: 800;
-
     letter-spacing: 3px;
-
     margin-bottom: 22px;
 }
 
 .hero h1 {
     max-width: 750px;
-
     font-family: 'Playfair Display', serif;
-
     font-size: clamp(42px, 6vw, 70px);
-
     font-weight: 700;
-
     line-height: 1.15;
-
     margin-bottom: 25px;
 }
 
 .hero-content > p:not(.hero-subtitle) {
     max-width: 590px;
-
     color: #e0e9ed;
-
     font-size: 17px;
-
     line-height: 1.9;
-
     margin-bottom: 35px;
 }
 
-
-/* ==========================================
-   5. BUTTONS
-========================================== */
+/* Buttons */
 
 .btn {
     display: inline-block;
-
     background: var(--secondary);
     color: var(--white);
-
     padding: 14px 29px;
-
     border-radius: 5px;
-
     font-size: 14px;
     font-weight: 700;
-
     transition: var(--transition);
 }
 
 .btn:hover {
     background: var(--secondary-dark);
-
     transform: translateY(-3px);
-
     box-shadow: 0 8px 20px rgba(22, 135, 127, 0.25);
 }
 
-
-/* ==========================================
-   6. COMMON SECTIONS
-========================================== */
+/* Common Sections */
 
 .section {
     padding: 95px 30px;
@@ -797,39 +715,27 @@ textarea {
 
 .section-heading {
     max-width: 750px;
-
     text-align: center;
-
     margin: 0 auto 50px;
 }
 
 .section-heading > p {
     color: var(--secondary);
-
     font-size: 12px;
     font-weight: 800;
-
     letter-spacing: 2.5px;
-
     margin-bottom: 14px;
 }
 
 .section-heading h2 {
     color: var(--primary);
-
     font-family: 'Playfair Display', serif;
-
     font-size: clamp(30px, 4vw, 44px);
-
     font-weight: 700;
-
     line-height: 1.3;
 }
 
-
-/* ==========================================
-   7. ABOUT SECTION
-========================================== */
+/* About Section */
 
 .about {
     background: var(--white);
@@ -837,26 +743,18 @@ textarea {
 
 .about-content {
     max-width: 850px;
-
     margin: auto;
-
     text-align: center;
 }
 
 .about-content p {
     color: var(--muted);
-
     font-size: 16px;
-
     line-height: 1.9;
-
     margin-bottom: 20px;
 }
 
-
-/* ==========================================
-   8. FACILITIES / FEATURE CARDS
-========================================== */
+/* Facilities */
 
 .facilities {
     background: var(--background-light);
@@ -864,65 +762,45 @@ textarea {
 
 .facility-grid {
     max-width: 1200px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
 }
 
 .facility-card {
     background: var(--white);
-
     padding: 38px 32px;
-
     border: 1px solid var(--border);
-
     border-radius: 10px;
-
     box-shadow: var(--shadow);
-
     transition: var(--transition);
 }
 
 .facility-card:hover {
     transform: translateY(-7px);
-
     border-color: #b9ddd6;
-
     box-shadow: 0 18px 40px rgba(20, 44, 62, 0.12);
 }
 
 .facility-card h3 {
     color: var(--primary);
-
     font-family: 'Playfair Display', serif;
-
     font-size: 24px;
-
     margin-bottom: 16px;
 }
 
 .facility-card p {
     color: var(--muted);
-
     font-size: 14px;
-
     line-height: 1.9;
-
     margin-bottom: 22px;
 }
 
 .facility-card a {
     color: var(--secondary);
-
     font-size: 14px;
-
     font-weight: 800;
-
     transition: var(--transition);
 }
 
@@ -930,10 +808,7 @@ textarea {
     color: var(--secondary-dark);
 }
 
-
-/* ==========================================
-   9. LOCATION AND OPENING HOURS
-========================================== */
+/* Location and Opening Hours */
 
 .library-info {
     background: var(--white);
@@ -941,101 +816,68 @@ textarea {
 
 .info-grid {
     max-width: 950px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 28px;
 }
 
 .info-card {
     padding: 38px;
-
     background: var(--background-light);
-
     border: 1px solid var(--border);
-
     border-radius: 10px;
-
     transition: var(--transition);
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-
     box-shadow: var(--shadow);
 }
 
 .info-card h3 {
     color: var(--primary);
-
     font-family: 'Playfair Display', serif;
-
     font-size: 25px;
-
     margin-bottom: 20px;
 }
 
 .info-card p {
     color: var(--muted);
-
     font-size: 15px;
-
     margin-bottom: 8px;
 }
 
-
-/* ==========================================
-   10. CALL TO ACTION SECTION
-========================================== */
+/* Call to Action */
 
 .cta-section {
     text-align: center;
-
     background: var(--primary);
-
     color: var(--white);
-
     padding: 85px 25px;
 }
 
 .cta-section h2 {
     max-width: 800px;
-
     margin: 0 auto 18px;
-
     font-family: 'Playfair Display', serif;
-
     font-size: clamp(29px, 4vw, 43px);
-
     line-height: 1.3;
 }
 
 .cta-section p {
     color: #d0dce2;
-
     font-size: 15px;
-
     margin-bottom: 30px;
 }
 
-
-/* ==========================================
-   11. FOOTER
-========================================== */
+/* Home Footer */
 
 .site-footer {
     background: #0d2231;
-
     color: #d0dce2;
-
     text-align: center;
-
     padding: 32px 20px;
-
     font-size: 13px;
 }
 
@@ -1045,30 +887,21 @@ textarea {
 
 .site-footer p:last-child {
     color: #8ed8cb;
-
     letter-spacing: 1px;
-
     font-weight: 600;
 }
 
-
-/* ==========================================
-   12. TABLET RESPONSIVE DESIGN
-========================================== */
+/* Home Responsive */
 
 @media (max-width: 900px) {
-
     .navbar {
         flex-direction: column;
-
         gap: 18px;
     }
 
     .nav-links {
         justify-content: center;
-
         flex-wrap: wrap;
-
         gap: 18px 25px;
     }
 
@@ -1079,16 +912,9 @@ textarea {
     .hero {
         min-height: 550px;
     }
-
 }
 
-
-/* ==========================================
-   13. MOBILE RESPONSIVE DESIGN
-========================================== */
-
 @media (max-width: 600px) {
-
     .navbar {
         padding: 17px 15px;
     }
@@ -1107,15 +933,12 @@ textarea {
 
     .hero {
         min-height: 510px;
-
         padding: 75px 22px;
-
         background-position: center;
     }
 
     .hero-subtitle {
         font-size: 11px;
-
         letter-spacing: 2px;
     }
 
@@ -1152,25 +975,23 @@ textarea {
     .site-footer {
         padding: 27px 15px;
     }
-
 }
 
-
-/* ==========================================
-   14. ACCESSIBILITY
-========================================== */
+/* Accessibility */
 
 a:focus-visible {
     outline: 3px solid var(--secondary);
-
     outline-offset: 4px;
 }
 
 ::selection {
     background: var(--secondary);
-
     color: var(--white);
- develop
+}
+
+/* =========================================
+   SERVICES PAGE
+========================================= */
 
 .services-hero {
     background: linear-gradient(135deg, #183c2b, #315c43);
@@ -1207,8 +1028,6 @@ a:focus-visible {
     margin: auto;
 }
 
-/* Main Services Section */
-
 .services-section {
     padding-top: 75px;
     padding-bottom: 85px;
@@ -1237,15 +1056,11 @@ a:focus-visible {
     font-size: 15px;
 }
 
-/* Services Grid */
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
 }
-
-/* Service Cards */
 
 .service-card {
     background: #ffffff;
@@ -1253,8 +1068,7 @@ a:focus-visible {
     border-radius: 14px;
     padding: 30px 25px;
     position: relative;
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
@@ -1296,8 +1110,6 @@ a:focus-visible {
     min-height: 75px;
 }
 
-/* Service Timings */
-
 .service-info {
     background: #f3f7f2;
     padding: 13px;
@@ -1317,8 +1129,6 @@ a:focus-visible {
     font-size: 13px;
     color: #626e65;
 }
-
-/* Usage Steps */
 
 .service-steps {
     border-top: 1px solid #e9eee9;
@@ -1342,7 +1152,7 @@ a:focus-visible {
     padding-left: 4px;
 }
 
-/* Footer */
+/* Services Footer */
 
 .site-footer {
     background: #193a29;
@@ -1396,11 +1206,7 @@ a:focus-visible {
     font-size: 13px;
 }
 
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
-
-/* Tablets */
+/* Services Responsive */
 
 @media (max-width: 992px) {
     .services-grid {
@@ -1416,8 +1222,6 @@ a:focus-visible {
         font-size: 27px;
     }
 }
-
-/* Mobile */
 
 @media (max-width: 600px) {
     .services-hero {
@@ -1465,15 +1269,11 @@ a:focus-visible {
     .footer-links {
         gap: 15px;
     }
- feature/collections-page
-develop
-
- develop
- develop
- develop
 }
 
-/* CONTACT PAGE */
+/* =========================================
+   CONTACT PAGE
+========================================= */
 
 .contact-header {
     background: #183c2b;
@@ -1618,10 +1418,7 @@ develop
     padding: 22px;
 }
 
-/* RESPONSIVE DESIGN */
-
 @media (max-width: 768px) {
-
     .contact-header {
         flex-direction: column;
         gap: 18px;
@@ -1640,5 +1437,4 @@ develop
         grid-template-columns: 1fr;
         padding: 35px 5%;
     }
-
 }
