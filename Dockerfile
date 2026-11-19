@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install exact dependencies
-RUN npm ci
+RUN --mount=type=cache,target=/root/.npm npm ci
 
 # Copy website source files
 COPY src/ ./src/
