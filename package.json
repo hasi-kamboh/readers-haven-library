@@ -2,7 +2,6 @@
   "name": "readers-haven-library",
   "version": "1.0.0",
   "description": "DevOps Assignment 02 - Readers Haven Library",
-  "main": "index.js",
   "scripts": {
     "build": "parcel build src/index.html src/collections.html src/membership.html src/services.html src/contact.html --dist-dir dist"
   },
@@ -14,3 +13,4 @@
     "parcel": "^2.16.4"
   }
 }
+
